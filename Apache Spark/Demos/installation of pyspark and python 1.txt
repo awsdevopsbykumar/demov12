@@ -1,0 +1,51 @@
+https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe
+
+
+https://colab.research.google.com/
+
+pip install pyspark 
+ 
+
+import sys
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.getOrCreate()
+df = spark.createDataFrame(
+    [
+        ("sue", 32),
+        ("li", 3),
+        ("bob", 75),
+        ("heo", 13),
+    ],
+    ["first_name", "age"],
+)
+df.show()
+
+
+pip uninstall pyspark
+
+set JAVA_HOME=C:\Program Files\Java\jdk-1.8
+set PATH=%PATH%;C:\Program Files\Java\jdk-1.8\bin
+
+set SPARK_HOME=C:\spark-3.5.2-bin-hadoop3
+set HADOOP_HOME=C:\spark-3.5.2-bin-hadoop3
+set PATH=%PATH%;C:\spark-3.5.2-bin-hadoop3\bin
+
+set PYTHONPATH=C:\spark-3.5.2-bin-hadoop3\python
+
+
+set PYSPARK_PYTHON=C:\Users\Training\AppData\Local\Programs\Python\Python311\python.exe
+
+set PYSPARK_DRIVER_PYTHON=C:\Users\Training\AppData\Local\Programs\Python\Python311\python.exe
+
+set PYSPARK_HOME=C:\Users\Training\AppData\Local\Programs\Python\Python311\python.exe
+
+set PATH=%PATH%;C:\Users\Training\AppData\Local\Programs\Python\Python311\Scripts\
+set PATH=%PATH%;C:\Users\Training\AppData\Local\Programs\Python\Python311\
+
+
+
+# https://medium.com/analytics-vidhya/installing-and-using-pyspark-on-windows-machine-59c2d64af76e
+# https://spark.apache.org/docs/latest/configuration.html
+
+

@@ -1,0 +1,3 @@
+cd C:\AWS-DevOPS\VP\All Courses\Apache Spark\Demos\01-First-Examples
+
+>spark-submit.cmd .\demo.py
